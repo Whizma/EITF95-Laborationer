@@ -97,7 +97,6 @@ class queue(larger):
             self.sumMeasurements = self.sumMeasurements + self.numberInQueue
             self.numberOfMeasurements = self.numberOfMeasurements + 1
             send(MEASUREMENT, simTime + 1.0, self, [])
-
             
 class sink(larger):
     def __init__(self):
